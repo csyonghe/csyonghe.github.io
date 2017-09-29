@@ -7,11 +7,11 @@ I am developing a small rendering engine ([SpireMiniEngine](https://github.com/c
 
 ## Retargeting Animation to a Different Skeleton
 
-We ran into issues when trying to render a skinned character model (created by someone else) with animation data we captured in our MoCap lab. The major problem is that the skeleton definitions of the models and our animation data do not match up. For example, we got one character model from Adobe Fuse, which is pre-skinned against the standard Mixamo skeleton (which contains 67 bones), some other models also have their own skeletons. Our animation data is against a custom skeleton that has 19 bones.
+We ran into issues when trying to render a skinned character model (created by someone else) with animation data we captured in our MoCap lab. The major problem is that the skeleton definitions of the models and our animation data do not match up. For example, we got one character model exported from Adobe Fuse, which is pre-skinned against the standard Mixamo skeleton (which contains 67 bones), and some other models also have their own skeletons. Our animation data is against a custom skeleton that has 19 bones.
 
 The mismatch in bone numbers is easy to address - the engine simply asks the user to provide a mapping file stating which bone in the animation file should be used to drive which bone in the model. This often referred to as "rigging" in many engines, basically it is just hooking up channels in an animation (each animation channel stores the transform key frames for a bone) to each bone of the model. 
 
-However, there is another issue. My engine current implements skinning using the following transform sequence:
+However, there is another issue. My engine currently implements skinning using the following transform sequence:
 ```
 FinalVertexPosition = AnimationTransform * SkeletalInverseBindPose * MeshVertexPosition
 ```
@@ -108,8 +108,8 @@ So the goal for my engine is to be able to use animation data that is against a 
 
 ## Implementation
 
-With all these ideas sorted out, I implemented a skeleton retargeting tool for my engine, as shown in the figure below.
+With all these details sorted out, I implemented a skeleton retargeting tool for my engine, as shown in the figure below.
 
 ![retargetTool]({{ site.baseurl }}/images/anim_retarget/fig2.png)
 
-The tool provides interface for the user to set up the bone mapping between the animation skeleton and model skeleton (through the panel on the right). If the bind poses of the two skeletons are different, the tool provides the interface (through the panel on the left) to type in transformations for each bone to morph the character into the same pose as animation skeleton's bind pose. The user can see the changes of the model as he types in the transformation values. The tool then uses the pose retargeting transforms to compute a single set of `SkeletonInverseBindPose` matrices and store them in a `.retarget` file. A good thing is that retargeting is an purely offline process and does not impact render performance. When rendering an animated model, the engine only requires three things: the mesh of the model, the `.retarget` file, and animation data (key frames). Once retargeting is done, there are no more worries about any mismatches in animation data and models through out the rest of the engine.
+The tool provides interface for the user to set up the bone mapping between the animation skeleton and model skeleton (through the panel on the right). For cases where the bind poses of the two skeletons are different, the tool also provides the interface (through the panel on the left) for user to type in transformations for each bone to morph the character into the same pose as animation skeleton's bind pose. The user can see the changes of the model as he types in the transformation values. The tool then uses the pose retargeting transforms to compute a single set of `SkeletonInverseBindPose` matrices and store them in a `.retarget` file. A good thing is that retargeting is an purely offline process and does not impact render performance. When rendering an animated model, the engine only requires three things: the mesh of the model, the `.retarget` file, and animation data (key frames). Once retargeting is done, there are no more worries about any mismatches in animation data and models through out the rest of the engine.
