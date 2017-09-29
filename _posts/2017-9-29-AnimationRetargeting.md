@@ -5,7 +5,7 @@ title: Animation Retargeting
 
 I am developing a small rendering engine ([SpireMiniEngine](https://github.com/csyonghe/SpireMiniEngine)) to facilitate my shading language research as well as a research project on animations led by another student at our lab. 
 
-# Retargeting Animation to a Different Skeleton
+## Retargeting Animation to a Different Skeleton
 
 We ran into issues when trying to render a skinned character model (created by someone else) with animation data we captured in our MoCap lab. The major problem is that the skeleton definitions of the models and our animation data do not match up. For example, we got one character model from Adobe Fuse, which is pre-skinned against the standard Mixamo skeleton (which contains 67 bones), some other models also have their own skeletons. Our animation data is against a custom skeleton that has 19 bones.
 
@@ -98,7 +98,7 @@ retargetedAccumBindPose[p] * retargetedTranslation == bonePosition
 
 Solving this equation leads to the line in the pseudo code.
 
-# Retargeting Different Bind Poses
+## Retargeting Different Bind Poses
 
 The only input retargeting task described in previous section is a model skeleton (bone hierarchy and bind pose transforms), an animation skeleton and a mapping of bone names of the two skeletons do not fully match. The rest of the computation is done by the engine. This retargeting step addresses the differences of bone-space definitions and body shapes between animation and model skeletons. However, this computation assumes that the model is already in the same pose as the animation skeleton's bind pose. That said, if the animation's skeleton is in T-pose, the model must also come in T-pose.
 
@@ -106,7 +106,7 @@ Chances are that some character models are created in A pose or some other poses
 
 So the goal for my engine is to be able to use animation data that is against a skeleton with some arbitrary bind pose to drive arbitrary model character that is in either T pose or A pose. The retargeting computation from previous section assumes the model is already in the same pose as the animation skeleton's bind pose. If they are not, we need another step to deform the input model into the desired bind pose first! Luckily, this is easily achievable by crafting an animation key frame (containing transformations for each bone) that are defined against the model's skeleton to transform the model. I will call it pose retargeting transforms, as denote as `R`. With that, we can use `R * ModelInverseBindPose * MeshVertexPosition` to transform the model into a desired pose, before applying the retargeting procedure in previous section.
 
-# Implementation
+## Implementation
 
 With all these ideas sorted out, I implemented a skeleton retargeting tool for my engine, as shown in the figure below.
 
