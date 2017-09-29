@@ -3,7 +3,7 @@ layout: post
 title: Animation Retargeting
 ---
 
-I am developing a small rendering engine ([SpireMiniEngine](https://github.com/csyonghe/SpireMiniEngine)) to facilitate my shading language research as well as a research project on animations led by another student at our lab. 
+I am developing a small rendering engine ([SpireMiniEngine](https://github.com/csyonghe/SpireMiniEngine)) to support my shading language research as well as a research project on animations led by another student at our lab. 
 
 ## Retargeting Animation to a Different Skeleton
 
