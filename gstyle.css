@@ -1,0 +1,341 @@
+html
+{
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center; 
+	background-attachment:fixed;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	text-indent: 0em;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+	padding:15px;
+    text-align: center;
+	z-index: 100;
+}
+ul.majorlisting
+{
+	padding-left: 0px;
+	list-style-type: square;
+}
+ul li
+{
+	margin-top:8px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.0em;
+	line-height: 1.5em;
+}
+.invisible
+{
+	visibility: hidden; 
+	position:absolute;
+}
+.pageBody
+{
+	padding:15px;
+}
+.yong_he_p
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2.5em;
+	font-weight: bold;
+	line-height:2.5em;
+	margin-top: -0.6em;
+	margin-bottom: 0em;
+	text-align: left;
+	float: left;
+}
+.yong_he_mid_font
+{
+	font-size: 2em;
+}
+.yong_he_small_font
+{
+	font-size: 1em;
+}
+.headerPaddingDiv
+{
+	height: 50px;
+}
+.headerDiv
+{
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 80px;
+}
+.headerDivFixed
+{
+	top: 0;
+	position: fixed;
+	
+}
+.innerHeaderDivFixed
+{
+	background: #FCFCFC;
+}
+nav ul
+{
+	margin-left: 10em;
+	padding-top: 1.5em;
+	list-style: none;
+	min-width: 13em;
+}
+nav ul li
+{
+	display: inline;
+}
+nav ul li a
+{
+	color: #868686;
+	font-size: 1.2em;
+	font-weight: 600;
+	line-height: 1.6em;
+	float: left;
+	display: block;
+	padding-left: 10px;
+	padding-right: 10px;
+	height:40px;
+	border-bottom-style: none;
+	border-bottom-width: 12px;
+	background-color:#FFFFFF;
+	border-color: #EFEFEF;
+	text-decoration: none;
+} 
+nav ul li a:hover
+{
+	color: #555555;
+}
+nav ul li a:active
+{
+	color: #000000;
+}
+nav ul li a.current
+{
+	color: #000000;
+	font-weight: bold;
+	border-bottom-style: solid;
+}
+
+a
+{
+	color: #444444;
+} 
+a:hover
+{
+	color: #000000;
+}
+a:active
+{
+	color: #444444;
+}
+.contentPageTopPaddingOutter
+{
+	max-width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	height: auto;
+}
+
+.contentPageTopPadding
+{
+	background-color: #ffffff;
+	height: 15px;
+}
+.contentPageOutter1
+{
+	margin-top: 1em;
+}
+.contentPageOutter2
+{
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+}
+.contentPage
+{
+	background-color: #ffffff;
+	padding-top: 1px;
+	padding-bottom: 15px;
+	height: auto;
+}
+.tailDiv
+{
+	height: 80px;
+	padding: 15px;
+}
+.tailText
+{
+	text-align: center;
+	line-height: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: #898989;
+}
+
+p
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.0em;
+	line-height: 1.5em;
+	margin-top: 1.0em;
+	margin-bottom: 1.0em;
+	text-align: left;
+	float:none;
+}
+.codeblock
+{
+	margin-left: 32px;
+	font-family: Inconsolata;
+	font-size: 1.0em;
+	line-height: 1.2em;
+	margin-top: 0.8em;
+	margin-bottom: 0.8em;
+	text-align: left;
+}
+
+ul
+{
+	margin-top: 2px;
+	margin-bottom: 4px;
+	margin-left: 32px;
+}
+
+li
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.0em;
+	line-height: 1.5em;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: left;
+}
+
+body
+{
+	text-align: center;
+}
+
+table
+{
+	text-align: left;
+}
+
+.borderlessTable
+{
+	margin-left: 0;
+	margin-right: 0;
+	border-style: none;
+	border-width: 0px;
+	border-spacing: 0px;
+	border:0;
+	margin:0;
+	border-collapse:collapse;
+}
+
+
+
+.mainDiv
+{
+	text-align: center;
+}
+
+.centeredDiv
+{
+	margin-left:auto;
+	margin-right:auto;
+	horizontal-align: middle;
+}
+
+.mainTable
+{
+	border-style: none;
+	border-width: 0px;
+	border-spacing: 0px;
+	border:0;
+	margin: 0px auto;
+	text-align: left;
+	border-collapse:collapse;
+}
+
+
+
+.mainBody
+{
+	padding-top: 5px;
+	padding-bottom: 10px;	
+}
+
+.subtitle
+{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 1.6em;
+	line-height: 1.8em;
+	margin-top: 1em;
+	margin-bottom: 0.8em;
+	text-align: left;
+}
+
+.subtitle2
+{
+	font-weight: 600;
+	line-height: 1.4em;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	font-size: 18px;
+}
+
+.subtitle3
+{
+	line-height: 1.2em;
+	margin-top: 12px;
+	margin-bottom: 7px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.thumbImage
+{
+	float: left;
+	margin-left: 0px;
+	margin-right: 8px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	border:0;
+}
+
+.photoImage
+{
+	float: right;
+	margin-left: 1em;
+	margin-right: 0em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+    .photoImage
+	{
+		float: none;
+		margin-left: auto;
+		margin-right: 0em;
+		margin-top: auto;
+		margin-bottom: 1em;
+	}
+}
+
+.imageAnnotation
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	margin-top: 3px;
+	margin-bottom: 10px;
+	text-align: center;
+}
