@@ -3,9 +3,8 @@ title: Yong He
 layout: default
 ---
 <img src="/images/photo4.png" alt = "Yong He" class = "photoImage"/>
-<p> I am a senior researcher at NVIDIA Research working on graphics programming languages.
-    I received my PhD degree on Computer Sceience from Carnegie Mellon University in September 2018.
-    I have benefited in many ways from my advisor,
+<p> I am a senior researcher at NVIDIA Research working on graphics programming languages. I am currently
+    a core contributor of the <a href="https://github.com/shader-slang/slang">Slang shading language</a> project. I received my PhD degree on Computer Sceience from Carnegie Mellon University in September 2018. I have benefited in many ways from my advisor,
     <a href="http://graphics.stanford.edu/~kayvonf/">Kayvon Fatahalian</a>. 
     My PhD study was focused on optimizing graphics systems with language mechanisms and compilation techniques.</p>
 <p>Before that, I received my bachelor degree in software engineering from South China University of Technology, P.R. 
