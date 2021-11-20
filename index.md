@@ -1,9 +1,7 @@
-{% include common_header.html %}
-
-<title>Yong He</title>
-{% include body_head.html %}
-
-<!-- Content Start -->
+---
+title: Yong He
+layout: default
+---
 <img src="/images/photo4.png" alt = "Yong He" class = "photoImage"/>
 <p> I am a senior researcher at NVIDIA Research working on graphics programming languages.
     I received my PhD degree on Computer Sceience from Carnegie Mellon University in September 2018.
@@ -124,6 +122,3 @@ Bulit a distributed system for real-time stream processing with light-weight fau
 <p>Visit &quot;<a href = "/projects">Projects</a>&quot; page for a list of my previous projects.</p>
 
 <p>&nbsp;</p>
-<!-- Content End -->
-
-{% include body_tail.html %}

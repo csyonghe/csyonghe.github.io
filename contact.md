@@ -1,9 +1,7 @@
-{% include common_header.html %}
-
-<title>Yong He - Contact</title>
-
-{% include body_head.html %}
-
+---
+title: Yong He
+layout: default
+---
 <!-- Content Start -->
 <div id="guts">
 <p class = "subtitle">Contact Me</p>
@@ -12,5 +10,3 @@
 <p>Github: <a href="https://github.com/csyonghe/">csyonghe</a></p>
 </div>
 <!-- Content End -->
-
-{% include body_tail.html %}
