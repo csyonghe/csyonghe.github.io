@@ -4,7 +4,7 @@ layout: default
 ---
 <img src="/images/photo4.png" alt = "Yong He" class = "photoImage"/>
 <p> I am a senior researcher at NVIDIA Research working on graphics programming languages. I am currently
-    a core contributor of the <a href="https://github.com/shader-slang/slang">Slang shading language</a> project. I received my PhD degree on Computer Sceience from Carnegie Mellon University in September 2018. I have benefited in many ways from my advisor,
+    a core contributor of the <a href="https://github.com/shader-slang/slang">Slang shading language</a> project. I received my PhD degree on Computer Science from Carnegie Mellon University in September 2018. I have benefited in many ways from my advisor,
     <a href="http://graphics.stanford.edu/~kayvonf/">Kayvon Fatahalian</a>. 
     My PhD study was focused on optimizing graphics systems with language mechanisms and compilation techniques.</p>
 <p>Before that, I received my bachelor degree in software engineering from South China University of Technology, P.R. 
@@ -18,6 +18,14 @@ Dissertation Committee: Kayvon Fatahalian (Chair), Jonathan Aldrich, Jim McCann,
 </p>
 
 <p class = "subtitle" id='publications'>Publications</p>
+<p>
+<b>SLANG.D: Fast, Modular and Differentiable Shader Programming</b><br/>
+Sai Bangaru, Lifan Wu, Tzu-Mao Li, Jacob Munkberg, Gilbert Bernstein, Jonathan Ragan-Kelley, Fredo Durand, Aaron Lefohn, Yong He.<br/>
+SIGGRAPH Asia 2023<br/>
+<a href='https://research.nvidia.com/labs/rtr/publication/bangaru2023slangd/'>Project Page</a> &nbsp; &nbsp; 
+<a href='https://research.nvidia.com/labs/rtr/publication/bangaru2023slangd/bangaru2023slangd.pdf'>Paper</a> &nbsp; &nbsp;
+<a href='http://github.com/shader-slang/slang'>Code on GitHub</a>
+</p>
 <p>
 <b>Slang: Language Mechanisms for Building Extensible Real-Time Shading Systems</b><br/>
 Yong He, Kayvon Fatahalian, Theresa Foley.<br/>
