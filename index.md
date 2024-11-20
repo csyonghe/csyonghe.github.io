@@ -13,7 +13,7 @@ China, in 2011. </p>
 <p class = "subtitle">Work Experience</p>
 <ul class = "majorlisting">
 <li>Since 2024 NVIDIA<br/>
-Principal Software Engineer
+Principal Software Engineer<br/>
 Tech lead of the Slang Shading Language.
 </li>
 <li>2020 -2024 NVIDIA Research<br/>
