@@ -3,12 +3,46 @@ title: Yong He
 layout: default
 ---
 <img src="/images/photo4.png" alt = "Yong He" class = "photoImage"/>
-<p> I am a principal researcher at NVIDIA Research working on graphics programming languages. I am currently
-    a core contributor of the <a href="https://github.com/shader-slang/slang">Slang shading language</a> project. I received my PhD degree on Computer Science from Carnegie Mellon University in September 2018. I have benefited in many ways from my advisor,
+<p> I am a principal software engineer at NVIDIA Research working on graphics programming languages. I am currently
+    the tech lead of the <a href="https://github.com/shader-slang/slang">Slang shading language</a> project. I received my PhD degree on Computer Science from Carnegie Mellon University in September 2018. I have benefited in many ways from my advisor,
     <a href="http://graphics.stanford.edu/~kayvonf/">Kayvon Fatahalian</a>. 
     My PhD study was focused on optimizing graphics systems with language mechanisms and compilation techniques.</p>
 <p>Before that, I received my bachelor degree in software engineering from South China University of Technology, P.R. 
 China, in 2011. </p>
+
+<p class = "subtitle">Work Experience</p>
+<ul class = "majorlisting">
+<li>Since 2024 NVIDIA<br/>
+Principal Software Engineer
+Tech lead of the Slang Shading Language.
+</li>
+<li>2020 -2024 NVIDIA Research<br/>
+Senior Researcher<br/>
+Working on graphics programming languages.
+</li>
+<li>2018 - 2020 Google<br/>
+Software Engineer<br/>
+Launched Stadia.
+</li>
+<li>Summer 2015 - Microsoft Research (Redmond, WA)<br/>
+Research Intern (mentored by Todd Mytkowicz and Kathryn McKinley)<br/>
+Studied probabilistic inference and approximate compilation.
+</li>
+<li>Summer 2014 - NVIDIA Research (Redmond, WA)<br/>
+Research Intern (mentored by Aaron Lefohn) <br/>
+Studied reactive shading systems.
+</li>
+<li>Summer 2013 - NVIDIA Research (Santa Clara, CA)<br/>
+Research Intern (mentored by Aaron Lefohn and Eric Enderton)<br/>
+Studied various anti-aliasing techniques. Investigated integrating adaptive shading into
+graphics pipeline. 
+</li>
+
+<li>2011 - 2012 - Microsoft Research Asia (Beijing, China)<br/>
+Research Intern, Systems Research Group (mentored by Zhengping Qian and Zheng Zhang)<br/>
+Bulit a distributed system for real-time stream processing with light-weight fault tolerance. 
+</li>
+</ul>
 
 <p class = "subtitle">PhD Dissertation</p>
 <p>
@@ -88,44 +122,13 @@ Zhengping Qian, Yong He, Chunzhi Su, Zhuojie Wu, Hongyu Zhu, Taizhi Zhang, Lidon
 Eurosys 2013 <br/><a href='http://research.microsoft.com/pubs/191070/timestream_eurosys13.pdf'>Paper</a>
 </p>
 
+<p>Visit &quot;<a href = "/projects">Projects</a>&quot; page for a list of my previous projects.</p>
+
 <p class = "subtitle">Awards</p>
 <p>
 <ul class = "majorlisting">
     <li>NVIDIA Graduate Fellowship (2016-2017)</li>
 </ul>
 </p>
-
-<p class = "subtitle">Work Experience</p>
-
-<ul class = "majorlisting">
-<li>Since 2020 NVIDIA Research<br/>
-Senior Researcher<br/>
-Working on graphics programming languages.
-</li>
-<li>2018 - 2020 Google<br/>
-Software Engineer<br/>
-Launched Stadia.
-</li>
-<li>Summer 2015 - Microsoft Research (Redmond, WA)<br/>
-Research Intern (mentored by Todd Mytkowicz and Kathryn McKinley)<br/>
-Studied probabilistic inference and approximate compilation.
-</li>
-<li>Summer 2014 - NVIDIA Research (Redmond, WA)<br/>
-Research Intern (mentored by Aaron Lefohn) <br/>
-Studied reactive shading systems.
-</li>
-<li>Summer 2013 - NVIDIA Research (Santa Clara, CA)<br/>
-Research Intern (mentored by Aaron Lefohn and Eric Enderton)<br/>
-Studied various anti-aliasing techniques. Investigated integrating adaptive shading into
-graphics pipeline. 
-</li>
-
-<li>2011 - 2012 - Microsoft Research Asia (Beijing, China)<br/>
-Research Intern, Systems Research Group (mentored by Zhengping Qian and Zheng Zhang)<br/>
-Bulit a distributed system for real-time stream processing with light-weight fault tolerance. 
-</li>
-</ul>
-
-<p>Visit &quot;<a href = "/projects">Projects</a>&quot; page for a list of my previous projects.</p>
 
 <p>&nbsp;</p>
